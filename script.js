@@ -12,7 +12,7 @@ function getPopularMovies() {
             data.results.slice(0, 12)
                 .map(movie => {
                     const htmlTemplate = `
-            <div class="col">
+            <div class="col-md-6 col-lg-4 col-sm-12">
                     <div class="card" onclick="detailsPopUp(${movie.id})">
                     <img src="https://image.tmdb.org/t/p/w1280/${movie.backdrop_path}" alt="${movie.title}">
                     <div class="card-body">
